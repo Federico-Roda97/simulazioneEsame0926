@@ -17,7 +17,6 @@ def get_ordini_by_city(citta:str):
     JOIN utenti AS u ON ca.id_utente = u.id_utente 
     WHERE u.citta LIKE %s
     """, [f"%{citta}%"])
-  print(result)
   return result
 
 
