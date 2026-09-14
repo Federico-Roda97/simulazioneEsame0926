@@ -20,9 +20,9 @@ function populateTable(json) {
   for(let x of json) {
     html += `
     <tr>
-      <td>${x.username}</td>
-      <td>${x.id}</td>
-      <td>${x.data}</td>
+      <td>${x.nome}</td>
+      <td>${x.id_ordine}</td>
+      <td>${x.anno}</td>
     </tr>
     `
   }
@@ -38,11 +38,11 @@ function populateTableSafe(json) {
   for(let x of json) {
     tr = document.createElement("tr")
     td1 = document.createElement("td")
-    td1.innerText = x.username
+    td1.innerText = x.nome
     td2 = document.createElement("td")
-    td2.innerText = x.id
+    td2.innerText = x.id_ordine
     td3 = document.createElement("td")
-    td3.innerText = x.data
+    td3.innerText = x.anno
     tr.appendChild(td1)
     tr.appendChild(td2)
     tr.appendChild(td3)

@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import TableRow from './components/TableRow'
 import Table from './components/Table'
 
 function App() {
